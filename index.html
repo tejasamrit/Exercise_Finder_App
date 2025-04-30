@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise Finder App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader-wrapper">
+    <div class="loader">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <!-- <h1>💪 Exercise Finder App</h1> -->
+    <h1>💪 Exercise Finder App <span class="flipped">💪</span></h1>
+
+    <p>Find exercises based on which part of your body hurts</p>
+  </header>
+
+  <!-- Top Buttons -->
+  <div class="top-buttons">
+    <button onclick="filterBodyWeight()">🏠 Home Workouts</button>
+    <button onclick="showFavorites()">❤️ Favorites</button>
+  </div>
+
+  <!-- Body Parts Menu -->
+  <section id="bodyPartsMenu" class="scroll-menu"></section>
+
+  <!-- Main Exercise Section -->
+  <section id="exercise-container" class="exercises-section"></section>
+
+  <!-- Favorites Section -->
+  <section id="favorites-container" class="exercises-section" style="display: none;"></section>
+
+  <!-- Footer -->
+  <footer>
+    Made with ❤️ by TejasAmrit
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
